@@ -1,0 +1,15 @@
+[package]
+name = "venue-directory"
+version = "0.1.0"
+edition = "2021"
+description = "SF venue directory: list, map, agent contact API"
+license = "MIT"
+repository = "https://github.com/stevederico/venue-directory"
+homepage = "https://github.com/stevederico/venue-directory"
+readme = "README.md"
+
+# Zero crates. HTTP/JSON are std. SQLite is the system lib.
+
+[profile.release]
+opt-level = 3
+lto = true
